@@ -1,0 +1,297 @@
+import { MenuItem } from '../types';
+
+export const initialMenuItems: MenuItem[] = [
+  // COFFEE
+  {
+    id: 'cappuccino-01',
+    name: 'Artisan Cappuccino',
+    description: 'Rich espresso balanced with velvety micro-foam milk and dusted with Belgian dark cocoa.',
+    price: 210,
+    category: 'Coffee',
+    image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '4-5 mins',
+    calories: 130,
+    rating: 4.9,
+    badge: 'Bestseller'
+  },
+  {
+    id: 'espresso-02',
+    name: 'Signature Double Espresso',
+    description: 'Intense, aromatic double shot pulled from our 100% single-origin Chikmagalur Arabica beans.',
+    price: 150,
+    category: 'Coffee',
+    image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: true,
+    preparationTime: '3 mins',
+    calories: 10,
+    rating: 4.8
+  },
+  {
+    id: 'latte-03',
+    name: 'Vanilla Bean Café Latte',
+    description: 'Silky steamed whole milk poured gently over freshly pulled espresso with Madagascar vanilla bean extract.',
+    price: 230,
+    category: 'Coffee',
+    image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '5 mins',
+    calories: 170,
+    rating: 4.9,
+    badge: 'Chef Favorite'
+  },
+  {
+    id: 'mocha-04',
+    name: 'Dark Chocolate Mocha',
+    description: 'Decadent 55% single-origin dark chocolate ganache melted into espresso, topped with whipped cream.',
+    price: 260,
+    category: 'Coffee',
+    image: 'https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '5-6 mins',
+    calories: 290,
+    rating: 4.9
+  },
+  {
+    id: 'flatwhite-05',
+    name: 'Velvet Flat White',
+    description: 'Expertly textured micro-foam milk folded over a double ristretto for a rich, coffee-forward finish.',
+    price: 220,
+    category: 'Coffee',
+    image: 'https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: true,
+    preparationTime: '4 mins',
+    calories: 120,
+    rating: 4.7
+  },
+
+  // COLD BEVERAGES
+  {
+    id: 'cold-coffee-01',
+    name: 'Classic Bloom Cold Coffee',
+    description: 'Our signature blended cold coffee with creamy vanilla bean gelato, fresh milk, and espresso drizzle.',
+    price: 240,
+    category: 'Cold Beverages',
+    image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '4 mins',
+    calories: 240,
+    rating: 4.9,
+    badge: 'Most Loved'
+  },
+  {
+    id: 'iced-americano-02',
+    name: 'Iced Americano Tonic',
+    description: 'Double espresso poured over crystal ice blocks with subtle botanical tonic water and an orange peel twist.',
+    price: 190,
+    category: 'Cold Beverages',
+    image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: true,
+    preparationTime: '3 mins',
+    calories: 15,
+    rating: 4.7
+  },
+  {
+    id: 'hazelnut-frappe-03',
+    name: 'Roasted Hazelnut Frappé',
+    description: 'Crushed ice, freshly roasted hazelnut praline syrup, robust coffee, and crowned with soft whipped cream.',
+    price: 270,
+    category: 'Cold Beverages',
+    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '5 mins',
+    calories: 310,
+    rating: 4.8
+  },
+  {
+    id: 'vietnamese-cold-brew-04',
+    name: 'Vietnamese Cold Brew',
+    description: '18-hour slow-steeped cold brew poured over thick sweetened condensed milk and crushed ice.',
+    price: 230,
+    category: 'Cold Beverages',
+    image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: true,
+    preparationTime: '3 mins',
+    calories: 160,
+    rating: 4.8
+  },
+
+  // TEA
+  {
+    id: 'masala-tea-01',
+    name: 'Grand Royal Masala Chai',
+    description: 'Slow-brewed Assam CTC black tea with crushed cardamom pods, fresh ginger, cinnamon, and whole milk.',
+    price: 130,
+    category: 'Tea',
+    image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '5 mins',
+    calories: 95,
+    rating: 4.9,
+    badge: 'Traditional'
+  },
+  {
+    id: 'hibiscus-tea-02',
+    name: 'Sparkling Hibiscus Berry Tea',
+    description: 'Infusion of dried Egyptian hibiscus petals, wild berries, and mint sprigs served chilled over clear ice.',
+    price: 180,
+    category: 'Tea',
+    image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: true,
+    preparationTime: '4 mins',
+    calories: 45,
+    rating: 4.8
+  },
+  {
+    id: 'matcha-latte-03',
+    name: 'Ceremonial Uji Matcha Latte',
+    description: 'Stone-ground ceremonial grade Japanese matcha whisked with oat milk and honey nectar.',
+    price: 260,
+    category: 'Tea',
+    image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '4 mins',
+    calories: 140,
+    rating: 4.8
+  },
+
+  // BREAKFAST
+  {
+    id: 'croissant-01',
+    name: 'Golden Butter French Croissant',
+    description: 'Flaky, buttery 27-layer artisan puff pastry baked fresh every morning with Normandy butter.',
+    price: 160,
+    category: 'Breakfast',
+    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '2 mins',
+    calories: 260,
+    rating: 4.9,
+    badge: 'Fresh Daily'
+  },
+  {
+    id: 'avocado-toast-02',
+    name: 'Avocado Sourdough Toast',
+    description: 'Toasted country sourdough topped with smashed Hass avocado, heirloom cherry tomatoes, crumbled feta, and microgreens.',
+    price: 290,
+    category: 'Breakfast',
+    image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '8 mins',
+    calories: 320,
+    rating: 4.8,
+    badge: 'Healthy Choice'
+  },
+  {
+    id: 'english-breakfast-03',
+    name: 'The Bloom Classic Breakfast Platter',
+    description: 'Scrambled farm eggs, buttered mushrooms, roasted tomatoes, baked beans, sourdough toast, and herb butter hashbrown.',
+    price: 380,
+    category: 'Breakfast',
+    image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: false,
+    preparationTime: '12 mins',
+    calories: 520,
+    rating: 4.9
+  },
+
+  // SNACKS
+  {
+    id: 'club-sandwich-01',
+    name: 'Garden Club Sandwich',
+    description: 'Triple-decker toasted bread filled with smoked paneer / grilled chicken, crisp iceberg lettuce, cheddar cheese, and house aioli.',
+    price: 280,
+    category: 'Snacks',
+    image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '10 mins',
+    calories: 420,
+    rating: 4.9,
+    badge: 'Popular'
+  },
+  {
+    id: 'french-fries-02',
+    name: 'Truffle & Herb French Fries',
+    description: 'Crispy skin-on potato fries tossed in Italian white truffle oil, grated parmesan, and freshly cracked black pepper with roasted garlic mayo.',
+    price: 210,
+    category: 'Snacks',
+    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '7 mins',
+    calories: 340,
+    rating: 4.8
+  },
+  {
+    id: 'garlic-bread-03',
+    name: 'Four-Cheese Pull-Apart Bread',
+    description: 'Freshly baked sourdough loaf stuffed with roasted garlic butter, fresh rosemary, mozzarella, and gouda cheese.',
+    price: 240,
+    category: 'Snacks',
+    image: 'https://images.unsplash.com/photo-1619860860774-1e2e17343432?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: true,
+    preparationTime: '9 mins',
+    calories: 380,
+    rating: 4.7
+  },
+
+  // DESSERTS
+  {
+    id: 'chocolate-brownie-01',
+    name: 'Warm Fudge Brownie & Gelato',
+    description: 'Gooey dark chocolate walnut brownie served warm with handcrafted vanilla bean gelato and salted caramel drizzle.',
+    price: 250,
+    category: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '4 mins',
+    calories: 410,
+    rating: 4.9,
+    badge: 'Sweet Tooth'
+  },
+  {
+    id: 'cheesecake-02',
+    name: 'New York Baked Cheesecake',
+    description: 'Creamy slow-baked classic cream cheese slice over buttery graham cracker crust with raspberry coulis.',
+    price: 280,
+    category: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
+    isPopular: true,
+    isVegetarian: true,
+    preparationTime: '3 mins',
+    calories: 370,
+    rating: 4.9,
+    badge: 'Signature'
+  },
+  {
+    id: 'tiramisu-03',
+    name: 'Classic Italian Tiramisù',
+    description: 'Espresso-soaked ladyfinger biscuits layered with whipped mascarpone cream and dusted with raw cocoa.',
+    price: 290,
+    category: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80',
+    isPopular: false,
+    isVegetarian: true,
+    preparationTime: '3 mins',
+    calories: 340,
+    rating: 4.8
+  }
+];

@@ -1,0 +1,6 @@
+{
+  "name": "Brew & Bloom Café",
+  "description": "Premium artisan coffee, handcrafted bites, and cozy ambiance. Good Coffee. Great Moments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
